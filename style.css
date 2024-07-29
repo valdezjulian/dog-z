@@ -42,7 +42,7 @@ body{
 
 .img-header {
     order: 2; /* Coloca a imagem à direita */
-    max-width: 50%; /* Ajusta a largura conforme necessário */
+    max-width: 100%; /* Ajusta a largura para 100% para responsividade */
     margin-right: 5rem;
 }
 
@@ -488,6 +488,22 @@ margin: auto;
     gap: 2rem;
 }
 
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .img-header {
+        order: 1; /* Coloca a imagem acima do h1 */
+        max-width: 100%; /* Ajusta a largura para 100% para responsividade */
+        margin: 0 auto 2rem; /* Adiciona margem inferior para espaçamento */
+    }
+
+    .box {
+        order: 2; /* Coloca a caixa abaixo da imagem */
+        max-width: 100%; /* Ajusta a largura conforme necessário */
+    }
+}
 
 @media (width > 600px){
     footer .container{
